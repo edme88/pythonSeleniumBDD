@@ -4,6 +4,7 @@ from selenium import webdriver
 
 YVYTU_HOME = "https://vientosdelaselva.com.ar/"
 TIENDA_HOME = "https://tienda.claro.com.ar/"
+STORE_HOME = "https://automationteststore.com/"
 
 @pytest.fixture
 def browser():
@@ -18,3 +19,5 @@ def go_home_page(browser, web_name):
         browser.get(YVYTU_HOME)
     elif web_name == "TiendaClaro":
         browser.get(TIENDA_HOME)
+    elif web_name == "Store":
+        browser.get(STORE_HOME)
